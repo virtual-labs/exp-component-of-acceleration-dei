@@ -1,1 +1,1 @@
-### Aim of the experiment
+### To Determine Coriolis Component of acceleration.
