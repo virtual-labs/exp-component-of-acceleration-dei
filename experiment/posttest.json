@@ -2,38 +2,123 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In the experiment, what does the flow rate (LPM) represent?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The radial velocity of the slider",
+        "b": "The amount of water passing through the system per minute",
+        "c": "The angular velocity of the rotating link",
+        "d": "The tangential velocity of the slider"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The radial velocity is the velocity along the radius, not the flow rate.",
+        "b": "The flow rate (LPM) represents the amount of water passing through the system per minute.",
+        "c": "The angular velocity refers to the rotation rate, not the flow rate.",
+        "d": "Tangential velocity is related to the speed along the circumference, not the flow rate."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "If the radial velocity is zero, what will the Coriolis acceleration be?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Maximum",
+        "b": "Zero",
+        "c": "Equal to the angular velocity",
+        "d": "Undefined"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "If radial velocity is zero, Coriolis acceleration will not be maximum.",
+        "b": "Coriolis acceleration is zero if there is no radial velocity.",
+        "c": "Coriolis acceleration is not equal to angular velocity when radial velocity is zero.",
+        "d": "Coriolis acceleration is defined when radial velocity is zero—it just equals zero."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the torque measurement in the hydraulic system indicate?",
+      "answers": {
+        "a": "The power of the system",
+        "b": "The angular velocity of the rotating link",
+        "c": "The rotational force needed to overcome resistance in the fluid system",
+        "d": "The velocity of the slider"
+      },
+      "explanations": {
+        "a": "Torque is related to force, not directly to power.",
+        "b": "Torque does not directly indicate angular velocity.",
+        "c": "Torque measures the rotational force needed to overcome resistance in the fluid system.",
+        "d": "Torque is not directly related to the slider velocity."
       },
       "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the virtual experiment, what happens if you do not lock the parameter values before starting the simulation?",
+      "answers": {
+        "a": "The simulation will fail to start.",
+        "b": "The system will use default values for parameters.",
+        "c": "The simulation will start with incorrect values.",
+        "d": "The simulation will crash."
+      },
+      "explanations": {
+        "a": "The simulation does not fail to start if parameters are not locked.",
+        "b": "If parameters are not locked, the system uses default values.",
+        "c": "The simulation does not start with incorrect values, it defaults them.",
+        "d": "The simulation will not crash due to unlocked parameters."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "How can the Coriolis effect be visually observed in the virtual lab?",
+      "answers": {
+        "a": "Through vector arrows showing acceleration components",
+        "b": "By measuring torque directly",
+        "c": "By adjusting the slider’s position manually",
+        "d": "By increasing the flow rate"
+      },
+      "explanations": {
+        "a": "Vector arrows representing acceleration components show the Coriolis effect.",
+        "b": "Torque does not directly show the Coriolis effect.",
+        "c": "Manually adjusting the slider does not visually show the Coriolis effect.",
+        "d": "Increasing the flow rate does not directly visualize the Coriolis effect."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What conclusion can be drawn from the Coriolis acceleration experiment?",
+      "answers": {
+        "a": "Radial velocity and angular velocity have no effect on acceleration.",
+        "b": "Coriolis acceleration depends linearly on both radial and angular velocities.",
+        "c": "Coriolis acceleration decreases with increasing angular velocity.",
+        "d": "Radial motion does not contribute to Coriolis acceleration."
+      },
+      "explanations": {
+        "a": "Both radial and angular velocities affect Coriolis acceleration.",
+        "b": "Coriolis acceleration depends linearly on both radial and angular velocities.",
+        "c": "Coriolis acceleration increases with increasing angular velocity.",
+        "d": "Radial motion contributes to Coriolis acceleration."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How is the Coriolis acceleration affected if the angular velocity is doubled?",
+      "answers": {
+        "a": "It becomes half.",
+        "b": "It remains unchanged.",
+        "c": "It doubles.",
+        "d": "It quadruples."
+      },
+      "explanations": {
+        "a": "Coriolis acceleration does not become half if angular velocity is doubled.",
+        "b": "Coriolis acceleration changes when angular velocity is altered.",
+        "c": "Coriolis acceleration doubles if angular velocity is doubled.",
+        "d": "Coriolis acceleration does not quadruple with angular velocity."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }
