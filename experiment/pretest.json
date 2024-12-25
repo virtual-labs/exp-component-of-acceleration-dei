@@ -2,38 +2,157 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the Coriolis component of acceleration?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Radial acceleration",
+        "b": "Tangential acceleration",
+        "c": "Acceleration due to relative motion in a rotating system",
+        "d": "Gravitational acceleration"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Radial acceleration is associated with the distance from the center of rotation.",
+        "b": "Tangential acceleration is due to changes in the speed along the circular path.",
+        "c": "The Coriolis acceleration arises due to relative motion in a rotating system.",
+        "d": "Gravitational acceleration is the force exerted by gravity."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following components does not contribute to total acceleration in a rotating system?",
+      "answers": {
+        "a": "Centripetal acceleration",
+        "b": "Gravitational acceleration",
+        "c": "Tangential acceleration",
+        "d": "Coriolis acceleration"
+      },
+      "explanations": {
+        "a": "Centripetal acceleration is required for circular motion.",
+        "b": "Gravitational acceleration is not part of the system's rotation, so it does not contribute.",
+        "c": "Tangential acceleration arises due to changes in speed along the circular path.",
+        "d": "Coriolis acceleration is caused by the rotation of the reference frame."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In which direction does the Coriolis acceleration act?",
+      "answers": {
+        "a": "Along the radial velocity",
+        "b": "Opposite to the radial velocity",
+        "c": "Perpendicular to both radial and angular velocity",
+        "d": "Along the axis of rotation"
+      },
+      "explanations": {
+        "a": "Coriolis acceleration is not aligned with the radial velocity.",
+        "b": "It is not opposite to the radial velocity.",
+        "c": "Coriolis acceleration is perpendicular to both radial and angular velocity.",
+        "d": "It does not act along the axis of rotation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What factor causes the Coriolis acceleration to arise?",
+      "answers": {
+        "a": "Linear motion in a non-inertial frame",
+        "b": "Rotational motion in an inertial frame",
+        "c": "Radial motion in a rotating reference frame",
+        "d": "Constant velocity in a rotating system"
+      },
+      "explanations": {
+        "a": "Linear motion in a non-inertial frame does not create Coriolis acceleration.",
+        "b": "Rotational motion in an inertial frame does not produce Coriolis acceleration either.",
+        "c": "Coriolis acceleration is caused by radial motion in a rotating reference frame.",
+        "d": "Constant velocity does not produce Coriolis acceleration."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the SI unit of angular velocity (ω)?",
+      "answers": {
+        "a": "Meters per second (m/s)",
+        "b": "Radians per second (rad/s)",
+        "c": "Revolutions per minute (RPM)",
+        "d": "Meters per second squared (m/s^2)"
+      },
+      "explanations": {
+        "a": "Meters per second is the unit for linear velocity, not angular velocity.",
+        "b": "Radians per second (rad/s) is the correct SI unit for angular velocity.",
+        "c": "Revolutions per minute (RPM) is a non-SI unit for angular velocity.",
+        "d": "Meters per second squared is the unit for acceleration, not angular velocity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens to the Coriolis acceleration when radial velocity increases?",
+      "answers": {
+        "a": "It decreases.",
+        "b": "It remains constant.",
+        "c": "It increases linearly.",
+        "d": "It becomes zero."
+      },
+      "explanations": {
+        "a": "Coriolis acceleration increases, not decreases, with radial velocity.",
+        "b": "It does not remain constant.",
+        "c": "Coriolis acceleration increases linearly with radial velocity.",
+        "d": "Coriolis acceleration does not become zero with increasing radial velocity."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which physical system is most influenced by the Coriolis effect?",
+      "answers": {
+        "a": "Earth's atmospheric winds",
+        "b": "Electrical circuits",
+        "c": "Hydraulic systems",
+        "d": "Stationary objects"
+      },
+      "explanations": {
+        "a": "Earth's atmospheric winds are significantly influenced by the Coriolis effect.",
+        "b": "Electrical circuits are not influenced by the Coriolis effect.",
+        "c": "Hydraulic systems are not affected by Coriolis acceleration.",
+        "d": "Stationary objects are not influenced by the Coriolis effect."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What role does torque play in the Coriolis acceleration experiment?",
+      "answers": {
+        "a": "It determines angular velocity.",
+        "b": "It balances the radial velocity.",
+        "c": "It influences the system's rotation and flow rate.",
+        "d": "It has no role."
+      },
+      "explanations": {
+        "a": "Torque is related to angular velocity but does not directly determine it in the Coriolis experiment.",
+        "b": "Torque does not balance the radial velocity directly.",
+        "c": "Torque influences the rotation and flow rate in a rotating system, affecting Coriolis acceleration.",
+        "d": "Torque does play a role in the experiment."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the primary purpose of the Coriolis acceleration experiment?",
+      "answers": {
+        "a": "To measure angular velocity directly",
+        "b": "To study tangential acceleration",
+        "c": "To determine the additional acceleration component in a rotating frame",
+        "d": "To observe the effect of gravity in a rotating system"
+      },
+      "explanations": {
+        "a": "The experiment is not primarily for measuring angular velocity.",
+        "b": "It is not focused on tangential acceleration.",
+        "c": "The primary purpose is to study the additional acceleration component caused by rotation, the Coriolis acceleration.",
+        "d": "The effect of gravity is not the main focus of this experiment."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }
