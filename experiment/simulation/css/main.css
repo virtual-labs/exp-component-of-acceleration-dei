@@ -8,7 +8,7 @@
     width: 1330px;
     height:800px;
     flex-direction: column;
-    background: url("./images/background.jpg") no-repeat;
+    background: URL("../images/background.jpg") no-repeat;
     justify-content: center;
   
   }
