@@ -109,6 +109,11 @@ The apparatus uses hydraulic analogy to determine Coriolis' component of acceler
 It consists of two brass tubes connected to a central rotor distributor. The distributor is rotated by a variable-speed D.C. motor. Water is supplied to the distributor by a pump through a rotameter.  
 When tubes are rotating with water flowing through them, and with various measurements provided, Coriolis’ component can be determined both experimentally and theoretically.
 
+<p align="center">
+  <img src="images/apparatus.png" alt="Coriolis Apparatus">
+</p>
+
+
 ---
 
 ### Specifications
