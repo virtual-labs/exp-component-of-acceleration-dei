@@ -110,7 +110,7 @@ It consists of two brass tubes connected to a central rotor distributor. The dis
 When tubes are rotating with water flowing through them, and with various measurements provided, Coriolis’ component can be determined both experimentally and theoretically.
 
 <p align="center">
-  <img src="images/apparatus.png" alt="Coriolis Apparatus">
+  <img src="images/apparatus_small.png" alt="Coriolis Apparatus">
 </p>
 
 
