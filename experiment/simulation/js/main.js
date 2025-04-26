@@ -91,6 +91,7 @@ const checkBox_cor = () =>{
         q_input.hidden =true;
         rpm_input.hidden = true;
         diameter_input.hidden = true;
+        getElement('lock').disabled = true;
         
     }
     else{
@@ -926,6 +927,7 @@ function showFormulaeModal() {
         getElement('rpm_value').innerText = 40
         getElement('q_value').innerText = 500;
         getElement('diameter_value').innerText = 8
+        getElement('lock').disabled = false;
 
 
 
