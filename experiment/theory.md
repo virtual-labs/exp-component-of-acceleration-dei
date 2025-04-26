@@ -7,7 +7,7 @@ When a point moves along a line that is simultaneously rotating, its absolute ac
 3. The third component, called **Coriolis component of acceleration**.
 
 <p align="center">
-  <img src="images/Coriolis componen.png" alt="Coriolis component">
+  <img src="images/Coriolis_component.png" alt="Coriolis component">
 </p>
 
 Consider a link OA which has a slider B which is free to slide, as shown in Fig. With O as centre, let the link OA move with a uniform angular velocity ω, to its new position OA' such that it is displaced dθ in time dt. The slider B moves outwards with sliding velocity *v* on link OA and occupies the position B' in the same interval of time.
@@ -72,9 +72,11 @@ For a fluid column of length *dr* at radius *r*:
   <img src="images/torque-equation.png" alt="Torque Equation">
 </p>
 Here, ⅆρ is the weight of the fluid element: ⅆρ= ρa dr
-Where:  
-- *p* = specific weight (N/m³)  
-- *a* = cross-sectional area (m²)
+
+Where: 
+
+- **p** = specific weight (N/m³)  
+- **a** = cross-sectional area (m²)
 
 In a direction perpendicular to rotation of tube. 
 
@@ -110,7 +112,7 @@ It consists of two brass tubes connected to a central rotor distributor. The dis
 When tubes are rotating with water flowing through them, and with various measurements provided, Coriolis’ component can be determined both experimentally and theoretically.
 
 <p align="center">
-  <img src="images/apparatus_small.png" alt="Coriolis Apparatus">
+  <img src="images/apparatus_new.png" alt="Coriolis Apparatus">
 </p>
 
 

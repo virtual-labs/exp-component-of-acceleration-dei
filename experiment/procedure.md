@@ -27,7 +27,7 @@
 ## Calculation:
 
 **Bore Dia. Of tubes = 8mm**  
-**Flow area per tube = = 0.0503×10^(-3) m^2** 
+**Flow area per tube = 0.0503×10^(-3) m^2** 
 
 **Total flow area (2 tubes) = 0.0001**  
 
