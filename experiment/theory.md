@@ -72,9 +72,11 @@ For a fluid column of length *dr* at radius *r*:
   <img src="images/torque-equation.png" alt="Torque Equation">
 </p>
 Here, ⅆρ is the weight of the fluid element: ⅆρ= ρa dr
-Where:  
-- *p* = specific weight (N/m³)  
-- *a* = cross-sectional area (m²)
+
+Where: 
+
+- **p** = specific weight (N/m³)  
+- **a** = cross-sectional area (m²)
 
 In a direction perpendicular to rotation of tube. 
 
