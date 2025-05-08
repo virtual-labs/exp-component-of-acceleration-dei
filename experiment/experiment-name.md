@@ -1,1 +1,1 @@
-## Corioli’s Component Of Acceleration
+## Coriolis’ Component Of Acceleration

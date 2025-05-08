@@ -4,7 +4,7 @@
 <b>Discipline | <b> Mechanical Engineering
 :--|:--|
 <b> Lab | <b> Engineering Dynamics Lab
-<b> Experiment|     <b> CORIOLI’S COMPONENT OF ACCELERATION
+<b> Experiment|     <b> CORIOLIS’ COMPONENT OF ACCELERATION
 
 ### About the Experiment 
 
