@@ -103,7 +103,7 @@ $\Delta F_{mass} = F_f - F_{nf}$ (in kg)
 
 $$T = (\Delta F_{mass} \cdot g) \cdot l$$
 
-*Where $\Delta F_{mass}$ is the reading difference in $kg$ and $l$ is 0.112 $m$.*
+Where $\Delta F_{mass}$ is the reading difference in $kg$ and $l$ is 0.112 $m$.
 
 #### Step 2.4: Practical Coriolis Acceleration ($a_{c,\ prac}$)
 
@@ -115,7 +115,7 @@ $$\mathbf{a_{c,\ prac} = \frac{2gT}{\rho\ a_{total} L^{2}}}$$
 
 Compare the calculated values to assess the accuracy of the experiment:
 
-$$\mathbf{\% E = \left| \frac{a_{c,theo} - a_{c,prac}}{a_{c,theo}} \right| \times 100}$$
+$$\% E = \left| \frac{a_{c,theo} - a_{c,prac}}{a_{c,theo}} \right| \times 100$$
 
 ---
 
