@@ -112,10 +112,9 @@ Use the Hydraulic Analogy formula (Equation 7 from Theory), where $T$ is in $N \
 $$\mathbf{a_{c,\ prac} = \frac{2gT}{\rho\ a_{total} L^{2}}}$$
 
 #### Step 2.5: Percentage Error
-
 Compare the calculated values to assess the accuracy of the experiment:
 
-$$\% E = \left| \frac{a_{c,theo} - a_{c,prac}}{a_{c,theo}} \right| \times 100$$
+$$\ E(percentage) = \bigg| \frac{a_{c,theo} - a_{c,prac}}{a_{c,theo}} \bigg| \times 100$$
 
 ---
 
