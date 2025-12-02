@@ -1,0 +1,1 @@
+## Coriolis’ Component Of Acceleration

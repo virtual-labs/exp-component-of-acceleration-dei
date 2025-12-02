@@ -1,0 +1,141 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the Coriolis component of acceleration?",
+      "answers": {
+        "a": "Radial acceleration",
+        "b": "Tangential acceleration",
+        "c": "The additional acceleration due to relative motion in a rotating system",
+        "d": "Gravitational acceleration"
+      },
+      "explanations": {
+        "a": "Radial acceleration is due to the change in direction toward the center of rotation.",
+        "b": "Tangential acceleration occurs when angular speed changes.",
+        "c": "Coriolis acceleration arises because of relative motion within a rotating frame.",
+        "d": "Gravitational acceleration is unrelated to rotational frame effects."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which component is NOT part of a point's total absolute acceleration?",
+      "answers": {
+        "a": "Centripetal acceleration",
+        "b": "Gravitational acceleration",
+        "c": "Tangential acceleration",
+        "d": "Coriolis acceleration"
+      },
+      "explanations": {
+        "a": "Centripetal acceleration is required for circular motion.",
+        "b": "Gravitational acceleration is external and unrelated to absolute acceleration in rotating systems.",
+        "c": "Tangential acceleration arises from changing angular speed.",
+        "d": "Coriolis acceleration is an additional component in rotational frames."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In which direction does the Coriolis acceleration act?",
+      "answers": {
+        "a": "Along the radial velocity",
+        "b": "Opposite to radial velocity",
+        "c": "Perpendicular to both radial and angular velocity",
+        "d": "Along axis of rotation"
+      },
+      "explanations": {
+        "a": "Coriolis acceleration does not align with radial velocity.",
+        "b": "It does not oppose the radial velocity.",
+        "c": "It always acts perpendicular to both radial motion and angular velocity.",
+        "d": "It does not act along the rotation axis."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What factor causes Coriolis acceleration?",
+      "answers": {
+        "a": "Linear motion in non-inertial frame",
+        "b": "Rotational motion in inertial frame",
+        "c": "Radial sliding within a rotating frame",
+        "d": "Constant velocity in stationary system"
+      },
+      "explanations": {
+        "a": "Linear motion in a non-inertial frame alone does not cause Coriolis acceleration.",
+        "b": "Rotational motion in an inertial frame does not generate Coriolis effects.",
+        "c": "Coriolis acceleration appears when an object moves radially inside a rotating frame.",
+        "d": "Constant velocity in a stationary system has no Coriolis effect."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which application uses Coriolis effect to measure mass flow rate?",
+      "answers": {
+        "a": "Centrifugal Pump",
+        "b": "Venturi Meter",
+        "c": "Pitot Tube",
+        "d": "Coriolis Flow Meter"
+      },
+      "explanations": {
+        "a": "Centrifugal pumps do not use Coriolis effect.",
+        "b": "Venturi meters work on pressure difference, not Coriolis force.",
+        "c": "Pitot tubes measure velocity using stagnation pressure.",
+        "d": "Coriolis flow meters directly use vibration-induced Coriolis forces to find mass flow rate."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "SI unit of angular velocity?",
+      "answers": {
+        "a": "m/s",
+        "b": "rad/s",
+        "c": "RPM",
+        "d": "m/s²"
+      },
+      "explanations": {
+        "a": "m/s is linear velocity.",
+        "b": "rad/s is the correct SI unit of angular velocity.",
+        "c": "RPM is a non-SI unit.",
+        "d": "m/s² is acceleration, not angular velocity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens to ac when radial velocity increases?",
+      "answers": {
+        "a": "decreases",
+        "b": "constant",
+        "c": "increases linearly",
+        "d": "zero"
+      },
+      "explanations": {
+        "a": "Coriolis acceleration does not decrease with radial velocity.",
+        "b": "It does not remain constant.",
+        "c": "Coriolis acceleration is directly proportional to radial velocity.",
+        "d": "It is not zero unless radial velocity is zero."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens to ac if angular velocity is doubled?",
+      "answers": {
+        "a": "becomes half",
+        "b": "unchanged",
+        "c": "doubles",
+        "d": "quadruples"
+      },
+      "explanations": {
+        "a": "Coriolis acceleration depends linearly on angular velocity.",
+        "b": "It does not stay unchanged.",
+        "c": "Doubling angular velocity doubles Coriolis acceleration.",
+        "d": "It does not increase by four times (that applies to centripetal acceleration)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
