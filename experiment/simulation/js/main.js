@@ -195,6 +195,18 @@ function drawFlowtube(time) {
         tubeWidth
     );
 
+    context.font = "10px Arial";
+    context.fillStyle = "black"; 
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText("Water Tank",topx + 58, topy + 16)
+
+    context.font = "10px Arial";
+    context.fillStyle = "black"; 
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText("Rotating Arm Assembly",topx + 85, topy + 45)
+
     // Optional: Add shading effect based on perspective
     const gradient1 = context.createLinearGradient(
         topx + 180,
@@ -380,6 +392,13 @@ function drawSpringBalance() {
     context.fillRect(topx + 155, topy + 413, -130, -10);
     context.fillRect(topx + 30, topy + 413, -10, -278);
 
+    context.font = "10px Arial";
+    context.fillStyle = "black"; 
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText("Water Pump",topx + 120, topy + 435)
+
+
     // Spring balance
     context.strokeRect(topx + 20, topy + 235, 70, 25);
     context.strokeRect(topx + 90, topy + 242, 10, 10);
@@ -470,13 +489,28 @@ function showValues (){
         context.textAlign = "center";
         context.textBaseline = "middle";
         context.fillText(springBalance_reading,topx+470,topy+415)
+
+        context.font = "10px Arial";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillText("Spring Balance Reading",topx+470,topy+435)
+        context.fillText("(kg)",topx+470,topy+445)
     
 
         context.font = "18px Arial";
-        context.fillStyle = "red"; // White color for the text
+        context.fillStyle = "red"; 
         context.textAlign = "center";
         context.textBaseline = "middle";
         context.fillText(rotameter_reading,topx-75,topy+288)
+        
+
+        context.font = "10px Arial";
+        context.fillStyle = "black"; 
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillText("Rotameter Reading",topx-68,topy+320)
+        context.fillText("(LPH)",topx-68,topy+335)
 
         
 
@@ -812,6 +846,27 @@ function showFormulaeModal() {
   document.getElementById('closeFormulaeModal').onclick = function() {
     document.getElementById('formulaeModal').style.display = 'none';
   }
+
+function showStepsModal() {
+  const modal = getElement("stepsModal");
+  const list = getElement("stepsList");
+
+  // Clear old content
+  list.innerHTML = "";
+
+  // Populate steps
+  Object.keys(stepsMapping).forEach(key => {
+    let li = document.createElement("li");
+    li.textContent = stepsMapping[key];
+    list.appendChild(li);
+  });
+
+  modal.style.display = "flex";
+}
+
+function closeStepsModal() {
+  getElement("stepsModal").style.display = "none";
+}
   
   // Close the modal if the user clicks outside of it
   window.onclick = function(event) {
@@ -971,13 +1026,21 @@ function showFormulaeModal() {
 
 
     }
+
+
+
+var stepsMapping = {
+  1:"Pump water through the rotameter into the rotating brass tubes to set a known flow rate. Set Speed, Q and Diameter inputs.",
+  2:"Rotate the distributor using the DC motor to provide angular velocity. Lock and Start Simulation",
+  3:"Observe the deflection/force produced when flowing water moves through the rotating tubes.",
+  4:"Use measured flow and rotation values to calculate and compare the experimental and theoretical Coriolis acceleration."
+}
     
 
     
 startButton.addEventListener("click", startAnimation_cor)
 pauseButton.addEventListener("click", stopAnimation_cor)
 resetButton.addEventListener("click", resetAnimation_cor)
-
 
 
 
