@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Coriolis Component of Acceleration</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="container">
+            <div id="header">
+                <h2 >Coriolis Component of Acceleration</h2>
+
+            </div>
+
+            <div id="simulation">
+
+
+            <div id="leftPane">
+
+                <div style="margin-top: 50px; padding-left: 20px;" id="inputs_cor">
+
+                
+
+                <div id="rpmInput" >
+                    <label for="rpm">Speed (RPM):</label>
+                    <input
+                      type="range"
+                      id="rpm"
+                      min="40"
+                      step="10"
+                      max="200"
+                      value="40"
+                    />
+                    <span id="rpm_value">40</span>
+                  </div>
+
+                  <div id="qInput" >
+                    <label for="q">Q (LPH):</label>
+                    <input
+                      type="range"
+                      id="q"
+                      min="500"
+                      step="50"
+                      max="1000"
+                      value="500"
+                    />
+                    <span id="q_value">500</span>
+                  </div>
+
+                  <div id="diameter_input" >
+                    <label for="diameter">Diameter(mm):</label>
+                    <input
+                      type="range"
+                      id="diameter"
+                      min="5"
+                      step="1"
+                      max="10"
+                      value="8"
+                    />
+                    <span id="diameter_value">8</span>
+                  </div>
+
+                  <div id="theoritcal_results">
+                    <b><span id="cor_theoretical">Theoretical Acc. Coriolis: 0 m/s²</span></b>
+                                             <b><span id="velocity_theoretical">Velocity: 0 m/s</span></b>
+                  </div>
+
+
+
+                  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                    <label for="lock_cor" style="font-size: 16px; color: black; font-weight: bold;">Lock the values</label>
+                    <input type="checkbox" id="lock_cor" style="margin-top: 10px; transform: scale(1.5);" onclick="checkBox_cor()">
+                  </div>
+
+
+                  <div style="margin-left: 45px;">
+                    <button onclick="showStepsModal()" id="read-btn">Read Steps</button>
+                  </div>
+                  
+
+                 
+                  
+                
+                
+                
+                
+                
+                </div>
+
+                
+                
+                
+                
+                
+            
+
+                
+
+                
+
+
+            </div>
+
+            <div id="middlePane">
+                <canvas id="cnv" width="700px" height="500px"></canvas>
+                <img id="water-pump" src='./images/water-pump.png'>
+                
+            </div>
+
+
+            <div id="rightPane" >
+              <div class="controls">
+                <div class="control_heading"><b>Controls:</b></div>
+                <div class="play">
+                  Start
+                  <button type="play" id="playButton_cor">
+                    <img src="images/play.png" />
+                  </button>
+                </div>
+                <div class="pause">
+                  Pause
+                  <button type="button" id="pauseButton_cor">
+                    <img src="images/pause.png" alt="Pause" />
+                  </button>
+                </div>
+                <div id="reset">
+                  Reset
+                  <button type="reset" id="resetButton_cor">
+                    <img src="images/reset.png" />
+                  </button>
+                </div>
+              </div>
+  
+              <div  id="update_cor">Start the simulation by pressing start.</div>
+  
+           
+  
+  
+              <div hidden>
+                <table>
+                  <tr>
+                    <th>Results</th>
+                    <th>Values</th>
+                  </tr>
+                  <tr>
+                  <td>Discharge (Q) </td>
+                    <td id="discharge">0 m³/sec</td>
+                  </tr>
+                  <tr>
+                    <td>Velocity </td>
+                    <td id="velocity">0 m/sec</td>
+                  </tr>
+                  <tr>
+                    <td>Torque(SB difference * 0.06)</td>
+                    <td id="torque">0 N-m</td>
+                  </tr>
+
+                  <tr>
+                    <td>Formula Used</td>
+                    <td><img id="formula" src="images/formula_coriolis.png" /></td>
+                  </tr>
+  
+                  <tr>
+                    <td>Coriolis Acceleration (Experimental)</td>
+                    <td id="result_cor">0 m/s²</td>
+                  </tr>
+                </table>
+              </div>
+             
+             <!-- Modal Structure -->
+<div id="resultsModal">
+  <div class="modal-content">
+    <!-- Close Button -->
+    <span id="closeResultsModal" class="close-button">&times;</span>
+
+    <!-- Modal Header -->
+    <h2 class="modal-title">Results and Observations</h2>
+
+    <!-- Input Data Container -->
+    <div id="inputDataContainer" class="input-data-container">
+     
+      <ul id="inputDataList"></ul>
+    </div>
+
+    <!-- Table Container -->
+    <div id="resultsTableContainer" class="results-table-container"></div>
+
+    <!-- Download Button -->
+    <button class="download-button" onclick="downloadResults()">Download Data</button>
+  </div>
+</div>
+
+  <div class="output">    
+    <!-- Show Formulae Button -->
+<button  id="formula-button" onclick="showFormulaeModal()">Show Formulae</button>       
+<button hidden  id="showResultsButton" onclick="showPopupResults()">Observation Table</button>
+              
+
+
+</div>
+
+<!-- Formulae Modal Structure -->
+<div id="formulaeModal" class="modal">
+  <div class="modal-content">
+    <!-- Close Button -->
+    <span id="closeFormulaeModal" class="close-button">&times;</span>
+    
+    <!-- Formulae Container -->
+    <div id="formulaeContainer">
+      <h3>Formulae</h3>
+      <ul id="formulaeList"></ul>
+    </div>
+  </div>
+</div>
+
+<div id="stepsModal" 
+     style="display:none; 
+            position:fixed; 
+            inset:0; 
+            background:rgba(0,0,0,0.45); 
+            padding:20px;
+            z-index:999;
+            justify-content:center; 
+            align-items:center;">
+  
+  <div id="stepsContent" 
+       style="background:white; 
+              padding:18px; 
+              border-radius:10px; 
+              width:350px;
+              font-size:14px;
+              box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+    
+    <h3 style="margin-top:0;">Experiment Steps</h3>
+    <ol id="stepsList"></ol>
+
+    <button onclick="closeStepsModal()" 
+            style="margin-top:12px; 
+                   margin-left: 140px;
+                   padding:6px 12px; 
+                   border:none;
+                   background:#f01d01; 
+                   color:white; 
+                   border-radius:6px;
+                   cursor:pointer;">
+      Close
+    </button>
+  </div>
+
+</div>
+
+
+
+            </div>
+
+            
+
+
+
+            
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+    <div id="copyright" title="Developer : Harsh Pathak,Aysha and Ambuj Kulshrestha , Dayalbagh Educational Instiute,Agra "></div>
+    <div id="Developer_information" 
+    title="Developer Name:
+                 1.Harsh Pathak
+                   (06hpathak@gmail.com)
+                 2.Aysha
+                   (satsangiaysha@gmail.com)
+                 3.Ambuj Kulshrestha
+                   (ambujkul.dei@gmail.com)
+    Instiute Name: Dayalbagh Educational Instiute, Agra">
+    </div>
+    
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+
+</html>

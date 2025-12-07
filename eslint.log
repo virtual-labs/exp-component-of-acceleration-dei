@@ -1,0 +1,22 @@
+
+/home/runner/work/exp-component-of-acceleration-dei/exp-component-of-acceleration-dei/experiment/simulation/js/main.js
+   25:7   warning  'R' is assigned a value but never used                 no-unused-vars
+   36:5   warning  'torque_reading' is assigned a value but never used    no-unused-vars
+   60:10  warning  'calculate_theoretical_acc' is defined but never used  no-unused-vars
+   85:7   warning  'checkBox_cor' is assigned a value but never used      no-unused-vars
+  247:15  warning  'centerX' is assigned a value but never used           no-unused-vars
+  248:15  warning  'centerY' is assigned a value but never used           no-unused-vars
+  431:14  warning  'i' is already defined                                 no-redeclare
+  444:14  warning  'i' is already defined                                 no-redeclare
+  553:5   warning  'waterAnimationId' is assigned a value but never used  no-unused-vars
+  603:9   warning  'resultsData' is assigned a value but never used       no-unused-vars
+  618:31  warning  '_' is not defined                                     no-undef
+  653:14  warning  'showPopupResults' is defined but never used           no-unused-vars
+  737:16  warning  'downloadResults' is defined but never used            no-unused-vars
+  786:10  warning  'showFormulaeModal' is defined but never used          no-unused-vars
+  850:10  warning  'showStepsModal' is defined but never used             no-unused-vars
+  867:10  warning  'closeStepsModal' is defined but never used            no-unused-vars
+  891:9   warning  'previousTime' is assigned a value but never used      no-unused-vars
+
+✖ 17 problems (0 errors, 17 warnings)
+
