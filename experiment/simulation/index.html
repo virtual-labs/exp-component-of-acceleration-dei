@@ -73,6 +73,11 @@
                     <label for="lock_cor" style="font-size: 16px; color: black; font-weight: bold;">Lock the values</label>
                     <input type="checkbox" id="lock_cor" style="margin-top: 10px; transform: scale(1.5);" onclick="checkBox_cor()">
                   </div>
+
+
+                  <div style="margin-left: 45px;">
+                    <button onclick="showStepsModal()" id="read-btn">Read Steps</button>
+                  </div>
                   
 
                  
@@ -209,6 +214,43 @@
     </div>
   </div>
 </div>
+
+<div id="stepsModal" 
+     style="display:none; 
+            position:fixed; 
+            inset:0; 
+            background:rgba(0,0,0,0.45); 
+            padding:20px;
+            z-index:999;
+            justify-content:center; 
+            align-items:center;">
+  
+  <div id="stepsContent" 
+       style="background:white; 
+              padding:18px; 
+              border-radius:10px; 
+              width:350px;
+              font-size:14px;
+              box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+    
+    <h3 style="margin-top:0;">Experiment Steps</h3>
+    <ol id="stepsList"></ol>
+
+    <button onclick="closeStepsModal()" 
+            style="margin-top:12px; 
+                   margin-left: 140px;
+                   padding:6px 12px; 
+                   border:none;
+                   background:#f01d01; 
+                   color:white; 
+                   border-radius:6px;
+                   cursor:pointer;">
+      Close
+    </button>
+  </div>
+
+</div>
+
 
 
             </div>
